@@ -1,0 +1,20 @@
+name: radiant
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - pillow
+  - tqdm
+  - scikit-image
+  - matplotlib
+  - pip:
+      - huggingface_hub
+      - nibabel
+      - einops
+      - pycocotools
+      - psutil
+      - scikit-learn
+      - opencv-python
