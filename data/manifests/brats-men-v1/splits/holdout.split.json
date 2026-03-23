@@ -1,0 +1,10 @@
+{
+  "manifestVersion": "1.0",
+  "datasetId": "brats-men-v1",
+  "splitId": "holdout",
+  "kind": "holdout",
+  "description": "Small holdout subset for smoke evaluation.",
+  "caseIds": [
+    "BraTS-MEN-01429-000"
+  ]
+}

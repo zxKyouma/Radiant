@@ -1,0 +1,95 @@
+{
+  "manifestVersion": "1.0",
+  "caseId": "BraTS-MEN-01429-000",
+  "datasetId": "brats-men-v1",
+  "studyId": "BraTS-MEN-01429-000",
+  "patientLabel": "BraTS-MEN-01429-000",
+  "modality": "brain_mri",
+  "report": {
+    "status": "unknown",
+    "file": {
+      "relativePath": "reports/BraTS-MEN-01429-000.txt",
+      "format": "txt",
+      "description": "Synthetic development-only report text for public BraTS subset.",
+      "sha256": null
+    }
+  },
+  "imagingSeries": [
+    {
+      "seriesId": "BraTS-MEN-01429-000-t1n",
+      "seriesDescription": "T1 native",
+      "sequenceType": "t1",
+      "file": {
+        "relativePath": "studies/BraTS-MEN-01429-000/t1n.nii.gz",
+        "format": "nifti",
+        "description": "BraTS T1 native MRI volume.",
+        "sha256": null
+      }
+    },
+    {
+      "seriesId": "BraTS-MEN-01429-000-t1c",
+      "seriesDescription": "T1 post contrast",
+      "sequenceType": "t1_post",
+      "file": {
+        "relativePath": "studies/BraTS-MEN-01429-000/t1c.nii.gz",
+        "format": "nifti",
+        "description": "BraTS T1 post-contrast MRI volume.",
+        "sha256": null
+      }
+    },
+    {
+      "seriesId": "BraTS-MEN-01429-000-t2w",
+      "seriesDescription": "T2 weighted",
+      "sequenceType": "t2",
+      "file": {
+        "relativePath": "studies/BraTS-MEN-01429-000/t2w.nii.gz",
+        "format": "nifti",
+        "description": "BraTS T2 weighted MRI volume.",
+        "sha256": null
+      }
+    },
+    {
+      "seriesId": "BraTS-MEN-01429-000-t2f",
+      "seriesDescription": "T2 FLAIR",
+      "sequenceType": "flair",
+      "file": {
+        "relativePath": "studies/BraTS-MEN-01429-000/t2f.nii.gz",
+        "format": "nifti",
+        "description": "BraTS T2 FLAIR MRI volume.",
+        "sha256": null
+      }
+    }
+  ],
+  "masks": [
+    {
+      "label": "dominant_lesion",
+      "source": "manual",
+      "file": {
+        "relativePath": "masks/BraTS-MEN-01429-000/dominant-lesion.nii.gz",
+        "format": "nifti",
+        "description": "BraTS expert segmentation mask.",
+        "sha256": null
+      },
+      "approvedBy": "brats_public_dataset"
+    }
+  ],
+  "groundTruth": {
+    "supportLabel": "supported",
+    "lesionCategory": "meningioma",
+    "dominantFindingText": "single dominant intracranial mass-like lesion",
+    "dominantLaterality": "unknown",
+    "curationTier": "silver",
+    "notes": "Public BraTS case with synthetic report text for development only."
+  },
+  "provenance": {
+    "sourceInstitution": "BraTS public dataset",
+    "sourceCaseId": "BraTS-MEN-01429-000",
+    "deidentified": true
+  },
+  "tags": [
+    "brain_mri",
+    "meningioma",
+    "public_dataset",
+    "synthetic_report"
+  ]
+}

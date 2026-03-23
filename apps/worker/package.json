@@ -1,0 +1,22 @@
+{
+  "name": "@radiant/worker",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "import:dataset": "tsx src/import-dataset.ts",
+    "preprocess:study": "tsx src/preprocess-study.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@radiant/core": "*",
+    "@radiant/shared": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

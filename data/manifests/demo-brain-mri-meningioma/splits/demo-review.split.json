@@ -1,0 +1,11 @@
+{
+  "manifestVersion": "1.0",
+  "datasetId": "demo-brain-mri-meningioma",
+  "splitId": "demo-review",
+  "kind": "demo",
+  "description": "Single demo case used to validate manifest loading and local workflow plumbing.",
+  "caseIds": [
+    "demo-case-001"
+  ]
+}
+

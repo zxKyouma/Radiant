@@ -1,0 +1,74 @@
+{
+  "manifestVersion": "1.0",
+  "caseId": "demo-case-001",
+  "datasetId": "demo-brain-mri-meningioma",
+  "studyId": "study_demo_001",
+  "patientLabel": "Demo Patient 001",
+  "modality": "brain_mri",
+  "report": {
+    "status": "finalized",
+    "file": {
+      "relativePath": "reports/demo-case-001.txt",
+      "format": "txt",
+      "description": "Finalized radiology report text for the demo case.",
+      "sha256": null
+    }
+  },
+  "imagingSeries": [
+    {
+      "seriesId": "series_t1_post",
+      "seriesDescription": "Axial T1 post contrast",
+      "sequenceType": "t1_post",
+      "file": {
+        "relativePath": "studies/demo-case-001/t1-post.nii.gz",
+        "format": "nifti",
+        "description": "Co-registered post-contrast T1 volume.",
+        "sha256": null
+      }
+    },
+    {
+      "seriesId": "series_flair",
+      "seriesDescription": "Axial FLAIR",
+      "sequenceType": "flair",
+      "file": {
+        "relativePath": "studies/demo-case-001/flair.nii.gz",
+        "format": "nifti",
+        "description": "Co-registered FLAIR volume.",
+        "sha256": null
+      }
+    }
+  ],
+  "masks": [
+    {
+      "label": "dominant_lesion",
+      "source": "manual",
+      "file": {
+        "relativePath": "masks/demo-case-001/dominant-lesion.nii.gz",
+        "format": "nifti",
+        "description": "Expert-approved dominant lesion mask.",
+        "sha256": null
+      },
+      "approvedBy": "radiologist_demo"
+    }
+  ],
+  "groundTruth": {
+    "supportLabel": "supported",
+    "lesionCategory": "meningioma",
+    "dominantFindingText": "right frontal extra-axial mass",
+    "dominantLaterality": "right",
+    "curationTier": "gold",
+    "notes": "Single dominant lesion suitable for patient-education visualization."
+  },
+  "provenance": {
+    "sourceInstitution": "demo",
+    "sourceCaseId": "demo_source_001",
+    "deidentified": true
+  },
+  "tags": [
+    "single_lesion",
+    "brain_mri",
+    "meningioma",
+    "patient_education_candidate"
+  ]
+}
+

@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "1.0",
+  "datasetId": "brats-men-v1",
+  "splitId": "train",
+  "kind": "train",
+  "description": "Initial training subset for local development.",
+  "caseIds": [
+    "BraTS-MEN-00307-000",
+    "BraTS-MEN-01205-000",
+    "BraTS-MEN-00488-000"
+  ]
+}

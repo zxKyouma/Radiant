@@ -1,0 +1,31 @@
+{
+  "manifestVersion": "1.0",
+  "datasetId": "brats-men-v1",
+  "name": "BraTS MEN v1 subset",
+  "description": "Five-case public BraTS meningioma subset extracted for local preprocessing and segmentation development.",
+  "source": "public",
+  "sensitivity": "deidentified",
+  "modality": "brain_mri",
+  "tasks": [
+    "segmentation_training",
+    "evaluation"
+  ],
+  "lesionCategories": [
+    "meningioma"
+  ],
+  "assetRoot": "../../assets/brats-men-v1",
+  "caseManifestPaths": [
+    "cases/BraTS-MEN-00307-000.case.json",
+    "cases/BraTS-MEN-01205-000.case.json",
+    "cases/BraTS-MEN-00488-000.case.json",
+    "cases/BraTS-MEN-01280-000.case.json",
+    "cases/BraTS-MEN-01429-000.case.json"
+  ],
+  "splitManifestPaths": [
+    "splits/train.split.json",
+    "splits/validation.split.json",
+    "splits/holdout.split.json"
+  ],
+  "createdAt": "2026-03-22",
+  "notes": "Uses synthetic development-only report text because the public BraTS release does not include paired clinical reports."
+}

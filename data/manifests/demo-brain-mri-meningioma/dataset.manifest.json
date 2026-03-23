@@ -1,0 +1,28 @@
+{
+  "manifestVersion": "1.0",
+  "datasetId": "demo-brain-mri-meningioma",
+  "name": "Demo Brain MRI Meningioma Bundle",
+  "description": "Example manifest bundle for a de-identified brain MRI workflow focused on a single dominant meningioma-like lesion.",
+  "source": "demo",
+  "sensitivity": "demo",
+  "modality": "brain_mri",
+  "tasks": [
+    "report_grounding",
+    "evaluation",
+    "pilot_review"
+  ],
+  "lesionCategories": [
+    "meningioma",
+    "unspecified_intracranial_mass"
+  ],
+  "assetRoot": "../../assets/demo-brain-mri-meningioma",
+  "caseManifestPaths": [
+    "cases/demo-case-001.case.json"
+  ],
+  "splitManifestPaths": [
+    "splits/demo-review.split.json"
+  ],
+  "createdAt": "2026-03-22",
+  "notes": "Referenced asset files are intentionally not committed. Place demo or de-identified assets under data/assets."
+}
+

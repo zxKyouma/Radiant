@@ -1,0 +1,10 @@
+{
+  "manifestVersion": "1.0",
+  "datasetId": "brats-men-v1",
+  "splitId": "validation",
+  "kind": "validation",
+  "description": "Small validation subset for local preprocessing checks.",
+  "caseIds": [
+    "BraTS-MEN-01280-000"
+  ]
+}
